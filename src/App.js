@@ -1,15 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Header from './components/header/Header';
-import ProductList from './components/productList/ProductList';
-import Footer from './components/footer/Footer';
+import Comments from './components/comments/Comments';
+import MainVideo from './components/mainVideo/MainVideo';
+import Suggestions from './components/suggestions/Suggestions';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-     <Header/>
-     <ProductList/>
-     <Footer/>
+    <div className="row">
+    <div className="col-md-8">
+    <MainVideo/>
+    <Comments/>
+    </div>
+    <Suggestions/>
     </div>
   );
 }
